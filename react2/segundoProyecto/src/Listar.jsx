@@ -1,29 +1,19 @@
 import React, { useState } from 'react';
 
-function listar() {
-    
-    function add(event){
-        event.preventDefault();
-        const lista=document.getElementById("lista");
-        const li=document.createElement("li");
-        const eliminar=document.createElement("button");
-        eliminar.textContent="eliminar";
-        li.textContent=document.getElementById("tarea").value;
-        li.appendChild(eliminar);
-        lista.appendChild(li);
-    }
-    return (
-        <div>
-            <form onSubmit={add} >
-            <input type="text" id='tarea'  placeholder='Escribe una tarea' />
-            <button type='submit'>Añadir</button>
-            </form>
-            <ul id='lista'>
+function InputExample() {
+  const [inputValue, setInputValue] = useState("");
 
-            </ul>
+  function handleChange(event) {
+    setInputValue(event.target.value);
+  }
 
-        </div>
-    );
+  return (
+    <div>
+      <h1>Input Controlado en React</h1>
+      <input type="text" value={inputValue} onChange={handleChange} />
+      <p>Valor del input: {inputValue}</p>
+    </div>
+  );
 }
 
-export default listar;
+export default InputExample;

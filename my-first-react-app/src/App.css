@@ -40,18 +40,39 @@
 .read-the-docs {
   color: #888;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+#recu{
+  border: 2px solid;
+  border-color: black;
+  padding: 30px;
+  float: right;
+  height: 60%;
+  width: auto;
+  color: white;
+  background-color:rgb(41, 39, 39);
+  z-index: 1;
+}
+#imagen{
+  float: left;
+  height: 25;
+  width: 25%;
+  z-index: 1;
 }
 
-nav ul li a {
-  text-decoration: none;
+#edad{
+  margin-right: 40px;
+}
+#lens{
+  margin-top: 200px;
+}
+#len{
+  margin-right: 5%;
+  display: inline;
+  border: 2px solid;
+  border-color: black;
+  padding: 5px;
   color: black;
+
+  background-color: #b7eeac;
+
 }
 
-nav ul li a.active {
-  font-weight: bold;
-  color: blue;
-}
